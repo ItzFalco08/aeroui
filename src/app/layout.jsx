@@ -11,6 +11,9 @@ import { InstallerProvider } from "@/hooks/useInstaller";
 export const metadata = {
   title: "Aero UI",
   description: "TailwindCSS Component library",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 
@@ -24,6 +27,7 @@ const poppins = Poppins({
 export default async function RootLayout({ children }) {
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
+      <link rel="icon" href="/favicon.svg" />
       <body
         className={`${poppins.variable} antialiased`}
       >
