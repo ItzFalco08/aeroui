@@ -7,6 +7,8 @@ const components = {
   installation: React.lazy(() => import("@/components/docs/Installation")),
   aboutme: React.lazy(() => import("@/components/docs/About")),
   overview: React.lazy(() => import("@/components/docs/Overview")),
+  hero: React.lazy(() => import("@/components/docs/Hero")),
+  navbar: React.lazy(() => import("@/components/docs/Navbar")),
 };
 
 import {

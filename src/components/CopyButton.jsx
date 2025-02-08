@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Clipboard, Check, Copy } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
-const CopyButton = () => {
+const CopyButton = ({code}) => {
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = async () => {
-    await navigator.clipboard.writeText('hello')
+    await navigator.clipboard.writeText(code)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }

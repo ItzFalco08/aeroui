@@ -16,16 +16,16 @@ import { Input } from './ui/input'
 
 const components = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Hero",
+    href: "/docs/hero",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Cool hero sections made with tailwindcss and framer motion",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    title: "Navbars",
+    href: "/docs/navbar",
     description:
-      "For sighted users to preview content available behind a link.",
+      "Modern Navbars built with tailwindcss",
   },
   {
     title: "Progress",
@@ -87,14 +87,14 @@ const Nav = () => {
                           </a>
                         </NavigationMenuLink>
                       </li>
-                      <ListItem href="/docs" title="Introduction">
-                        Re-usable components built using Radix UI and Tailwind CSS.
+                      <ListItem href="/docs/overview" title="Overview">
+                        Re-usable components and pages built using Framer motion and Tailwind CSS.
                       </ListItem>
                       <ListItem href="/docs/installation" title="Installation">
                         How to install dependencies and structure your app.
                       </ListItem>
-                      <ListItem href="/docs/primitives/typography" title="Typography">
-                        Styles for headings, paragraphs, lists...etc
+                      <ListItem href="/docs/aboutme" title="About Me">
+                        About the developer of aeroUI
                       </ListItem>
                     </ul>
                   </NavigationMenuContent>

@@ -18,7 +18,7 @@ export default function Code({ code }) {
 
   return (
     <div className="w-[50em] h-[30em] relative">
-      <CopyButton />
+      <CopyButton code={code} />
       <div className="w-[50em] z-[1] h-[30em] relative rounded-xl overflow-auto scrollbar-hide absolute">
         <pre className="language-jsx z-[1] !my-0 !bg-zinc-950 rounded-xl px-10">
           <code>{code}</code>
