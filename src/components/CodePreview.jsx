@@ -29,7 +29,7 @@ export default function CodePreview({ component, className }) {
             </div>
 
             {Selected === 'Preview' ? (
-                <div className={`relative h-[34em] w-full h-full overflow-hidden bg-transparent border rounded-xl flex items-center justify-center `}>
+                <div className={`relative h-[34em] w-full  overflow-hidden bg-transparent border rounded-xl flex items-center justify-center `}>
                     <ComponentToRender />
                 </div>
             ) : (
