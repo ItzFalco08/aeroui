@@ -15,12 +15,12 @@ const Installation = () => {
             {/* Lucide React Section */}
             <div className="title">Lucide React</div>
             <p className="para">lucide-react is an icon library for React. It is simple to use and offers many nice icons. Learn more at <Link target="_blank" rel="noopener noreferrer" className="link" href="https://lucide.dev/icons/">Lucide Icons</Link>.</p>
-            <Terminal library={'lucide-react'} />
+            <Terminal Installer="npm" library={'lucide-react'} />
 
             {/* Framer Motion Section */}
             <div className="title mt-6">Framer Motion</div>
             <p className="para">framer-motion helps you add smooth animations to your app. It is easy to use and makes your UI more interactive. Learn more at <Link target="_blank" rel="noopener noreferrer" className="link" href="https://www.framer.com/motion/">Framer Motion</Link>.</p>
-            <Terminal library={'framer-motion'} />
+            <Terminal Installer="npm" library={'framer-motion'} />
 
             {/* TailwindCSS Section */}
             <div className="title mt-6">TailwindCSS</div>

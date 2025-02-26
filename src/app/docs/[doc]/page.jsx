@@ -6,10 +6,10 @@ import Content from '@/components/Content'
 
 const page = () => {
   return (
-    <div className='w-screen h-screen relative'>
+    <div className='w-screen h-screen relative overflow-hidden'>
       <Nav />
 
-      <div className='flex'>
+      <div className='flex '>
         <Sidebar />
         <Content />
       </div>

@@ -4,7 +4,7 @@ import Code from '@/components/Code';
 import * as CodeSnippets from './code'; // Import all exports from code.js
 import * as Components from '@/components/previews/Components'; // Import all components
 
-export default function CodePreview({ component }) {
+export default function CodePreview({ component, className }) {
     const [Selected, setSelected] = useState('Preview');
 
     useEffect(() => {
@@ -18,8 +18,8 @@ export default function CodePreview({ component }) {
     const code = CodeSnippets[component] || `// Code not found for ${component}`;
 
     return (
-        <div className="my-10">
-            <div className="border-b border-zinc-400 dark:border-zinc-800 h-15 flex gap-2 mb-5 w-[50em] py-2">
+        <div className={`my-10 w-[50em] h-fit flex flex-col ${className}`}>
+            <div className="border-b border-zinc-400 dark:border-zinc-800 h-15 flex gap-2 mb-5 full py-2">
                 <Button variant="ghost" onClick={() => setSelected('Preview')} className={`${Selected === 'Preview' && 'bg-secondary'} h-full`}>
                     Preview
                 </Button>
@@ -29,7 +29,7 @@ export default function CodePreview({ component }) {
             </div>
 
             {Selected === 'Preview' ? (
-                <div className="relative w-[50em] h-[30em] bg-zinc-900 rounded-xl flex items-center justify-center">
+                <div className={`relative h-[34em] w-full h-full overflow-hidden bg-transparent border rounded-xl flex items-center justify-center `}>
                     <ComponentToRender />
                 </div>
             ) : (

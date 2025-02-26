@@ -1,5 +1,6 @@
-export const Hero1 = `
-"use client"
+
+const Hero1 = 
+`"use client"
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -36,11 +37,11 @@ export default function Hero() {
 }
 `
 
-export const Hero2 = `
+const Hero2 = `
 `
 
-export const Navbar1 = `
-import React from 'react'
+const Navbar1 = 
+`import React from 'react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { ModeToggle } from '@/components/ModeToggle'
@@ -68,5 +69,80 @@ const Navbar1 = () => {
 export default Navbar1
 `
 
-export const Navbar2 = `
+const Navbar2 = `
 `
+
+const Button = 
+`"use client";
+import Button from '@/components/aeroui/button'
+
+export default function Component() {
+  return (
+      // variant -> primary, secondary, ghost
+      // size -> sm, md, lg
+
+      <Button variant="primary" size="md" className="mt-4">Click me</Button>
+  )
+}
+`
+
+const ButtonPrimary = 
+`"use client";
+import Button from '@/components/aeroui/button'
+
+export default function Component() {
+  return (
+      <Button variant="primary" size="md" className="mt-4">Primary</Button>
+  )
+}
+`
+
+const ButtonSecondary =
+`"use client";  
+import Button from '@/components/aeroui/button'
+
+export default function Component() {
+  return (
+      <Button variant="secondary" size="md" className="mt-4">Secondary</Button>
+  )
+}
+`
+
+const ButtonGhost =
+`"use client";
+import Button from '@/components/aeroui/button'
+
+export default function Component() {
+  return (
+      <Button variant="ghost" size="md" className="mt-4">Ghost</Button>
+  )
+}
+`
+
+const ButtonOutline =
+`"use client";
+import Button from '@/components/aeroui/button'
+
+export default function Component() {
+  return (
+      <Button variant="outline" size="md" className="mt-4">Ghost</Button>
+  )
+}
+`
+
+const GlowCard = 
+`"use client";
+import GlowCard from '@/components/aeroui/glowcard'
+
+export default function Component() {
+  return (
+      // color -> any valid css color (#ffffff default)
+      <GlowCard color="#ffffff">
+        // put your content here
+        <h1>Glowing Card</h1>
+      </GlowCard>
+  )
+}
+`;
+
+export { Hero1, Hero2, Navbar1, Navbar2, Button, GlowCard, ButtonPrimary, ButtonSecondary, ButtonGhost, ButtonOutline };

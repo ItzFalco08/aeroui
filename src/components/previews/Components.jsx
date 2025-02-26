@@ -1,9 +1,10 @@
-import React from 'react'
-import { Button } from '@/components/ui/button'
+import {Button as ShadcnBtn} from '@/components/ui/button'
 import Link from 'next/link'
 import { ModeToggle } from '@/components/ModeToggle'
 import { ChevronRight } from 'lucide-react'
 import { motion } from "framer-motion";
+import AerouiBtn from '@/components/aeroui/button';
+import AerouiCard from '@/components/aeroui/glowcard';
 
 const Navbar1 = () => {
   return (
@@ -18,7 +19,7 @@ const Navbar1 = () => {
 
       <div className='flex items-center'>
         <ModeToggle className="mr-4" />
-        <Link href="/docs"><Button className="rounded-full h-[40px]">Components <ChevronRight /></Button></Link>
+        <Link href="/docs"><ShadcnBtn className="rounded-full h-[40px]">Components <ChevronRight /></ShadcnBtn></Link>
       </div>
     </div>
   )
@@ -57,4 +58,47 @@ function Hero1() {
   );
 }
 
-export {Navbar1, Hero1}
+
+function Button() {
+  return (
+      // variant -> primary, secondary, ghost
+      // size -> sm, md, lg
+
+      <AerouiBtn variant="primary" size="md" className="mt-4">Click me</AerouiBtn>
+  )
+}
+
+function ButtonPrimary() {
+  return (
+      <AerouiBtn variant="primary" size="md" className="mt-4">Primary</AerouiBtn>
+  )
+}
+
+function ButtonSecondary() {
+  return (
+      <AerouiBtn variant="secondary" size="md" className="mt-4">Secondary</AerouiBtn>
+  )
+}
+
+function ButtonGhost() {
+  return (
+      <AerouiBtn variant="ghost" size="md" className="mt-4">Ghost</AerouiBtn>
+  )
+}
+
+function ButtonOutline() {
+  return (
+      <AerouiBtn variant="outline" size="md" className="mt-4">Outline</AerouiBtn>
+  )
+}
+
+function GlowCard() {
+  return (
+      // color -> any valid css color (#ffffff default)
+      <AerouiCard color="#ffffff">
+        <h1>Glowing Card</h1>
+      </AerouiCard>
+  )
+}
+
+export {Navbar1, Hero1, Button, GlowCard, ButtonPrimary, ButtonSecondary, ButtonGhost, ButtonOutline}

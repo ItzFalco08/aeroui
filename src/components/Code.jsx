@@ -8,7 +8,7 @@ import "prismjs/themes/prism-tomorrow.css";
 
 import CopyButton from "./CopyButton";
 
-export default function Code({ code }) {
+export default function Code({ code, className }) {
   const { theme } = useTheme();
 
   useEffect(() => {
@@ -17,13 +17,11 @@ export default function Code({ code }) {
   }, [theme]);
 
   return (
-    <div className="w-[50em] h-[30em] relative">
+    <div className={`w-full relative ${className}`}>
       <CopyButton code={code} />
-      <div className="w-[50em] z-[1] h-[30em] relative rounded-xl overflow-auto scrollbar-hide absolute">
-        <pre className="language-jsx z-[1] !my-0 !bg-zinc-950 rounded-xl px-10">
+        <pre className="language-jsx text-sm w-full h-fit max-h-[30em] overflow-auto !bg-zinc-950 scrollbar-hide rounded-md p-4">
           <code>{code}</code>
         </pre>
-      </div>
     </div>
   );
 }

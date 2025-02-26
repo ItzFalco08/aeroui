@@ -54,7 +54,7 @@ const components = [
 
 const Nav = () => {
   return (
-    <div className='w-full h-[50px] flex px-12 justify-between items-center'>
+    <div className='w-full backdrop-blur-md bg-white/20 dark:bg-black/20 z-[100] !py-[20px] absolute top-0 left-0 h-[50px] flex px-12 justify-between items-center'>
         <div className=' flex gap-5 items-center'>
             <h1 className='font-semibold text-xl mr-3 flex gap-2'><Leaf />AeroUI</h1>
             <NavigationMenu>
@@ -67,7 +67,7 @@ const Nav = () => {
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="bg-">Getting started</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                       <li className="row-span-3">
@@ -100,7 +100,7 @@ const Nav = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="bg-">Components</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                       {components.map((component) => (

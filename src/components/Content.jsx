@@ -9,6 +9,8 @@ const components = {
   overview: React.lazy(() => import("@/components/docs/Overview")),
   hero: React.lazy(() => import("@/components/docs/Hero")),
   navbar: React.lazy(() => import("@/components/docs/Navbar")),
+  button: React.lazy(() => import("@/components/docs/Button")),
+  card: React.lazy(() => import("@/components/docs/Card")),
 };
 
 import {
@@ -30,7 +32,7 @@ export default function Content() {
   const {Selected}  = useSelected()
 
   return (
-    <div id="content" className="w-full px-20 py-4 overflow-auto">
+    <div className="w-full h-screen !px-20 !py-20 scrollbar-hide py-4 overflow-auto">
       <Suspense key={doc} fallback={
         <div className="flex justify-center items-center h-full w-full">
           <LoaderCircle className="w-6 h-6 animate-spin absolute" />

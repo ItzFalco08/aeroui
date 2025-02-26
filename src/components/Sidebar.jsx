@@ -40,6 +40,12 @@ const Sidebar = () => {
                 {
                     title: "Navbar",
                 },
+                {
+                    title: "Button",
+                },
+                {
+                    title: "Card",
+                },
             ],
         },
     ]
@@ -47,7 +53,7 @@ const Sidebar = () => {
     const {Selected, setSelected} = useSelected()
 
     return (
-        <div id='sidebar' className='px-9 pt-6 overflow-y-scroll w-[300px] scrollbar-hide'>
+        <div id='sidebar' className='px-9 h-full !my-20 overflow-y-scroll w-[300px] scrollbar-hide'>
             {docs.map((section, index) => 
             (
                 <div key={index} className='mb-6'>
