@@ -35,13 +35,12 @@ body {
 .title {
   width: 100%;
   max-width: 42rem;
-  margin: 0, 10em;
   font-size: 1.4em !important;
   font-weight: 600;
   border-bottom: 1px solid #ffffff25;
   padding-bottom: 0.4em;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 2em !important;        
+  margin-bottom: 1em !important;
 }
 
 .para {
