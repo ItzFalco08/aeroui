@@ -131,18 +131,55 @@ export default function Component() {
 `
 
 const GlowCard = 
-`"use client";
-import GlowCard from '@/components/aeroui/glowcard'
+`
+import GlowCard from "@/components/aeroui/glowcard"
 
 export default function Component() {
   return (
       // color -> any valid css color (#ffffff default)
-      <GlowCard color="#ffffff">
-        // put your content here
-        <h1>Glowing Card</h1>
+      <GlowCard color="#ffffff" className="text-white">
+        <h1 className='text-xl font-medium'>Glowing Card</h1>
+        <p className='text-sm mt-2 text-white/70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus excepturi illo quibusdam rem voluptates ab recusandae, beatae similique sit.</p>
       </GlowCard>
   )
 }
 `;
 
-export { Hero1, Hero2, Navbar1, Navbar2, Button, GlowCard, ButtonPrimary, ButtonSecondary, ButtonGhost, ButtonOutline };
+const GlowCardRed = 
+`function GlowCardRed() {
+  return (
+      // color -> any valid css color (#ffffff default)
+      <AerouiCard color="#ff1100" className="text-white">
+        <h1 className='text-xl font-medium'>Glowing Card</h1>
+        <p className='text-sm mt-2 text-white/70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus excepturi illo quibusdam rem voluptates ab recusandae, beatae similique sit.</p>
+      </AerouiCard>
+  )
+}
+
+`;
+
+const GlowCardBlue = `function GlowCardBlue() {
+  return (
+      // color -> any valid css color (#ffffff default)
+      <AerouiCard color="#1900ff" className="text-white">
+        <h1 className='text-xl font-medium'>Glowing Card</h1>
+        <p className='text-sm mt-2 text-white/70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus excepturi illo quibusdam rem voluptates ab recusandae, beatae similique sit.</p>
+      </AerouiCard>
+  )
+}
+`
+
+const GlowCardYellow = `function GlowCardYellow() {
+  return (
+      // color -> any valid css color (#ffffff default)
+      <AerouiCard color="#ffe100" className="text-white">
+        <h1 className='text-xl font-medium'>Glowing Card</h1>
+        <p className='text-sm mt-2 text-white/70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus excepturi illo quibusdam rem voluptates ab recusandae, beatae similique sit.</p>
+      </AerouiCard>
+  )
+}
+
+`
+
+
+export { Hero1, Hero2, Navbar1, Navbar2, Button, GlowCard, ButtonPrimary, ButtonSecondary, ButtonGhost, ButtonOutline, GlowCardRed, GlowCardBlue, GlowCardYellow };

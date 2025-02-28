@@ -1,0 +1,39 @@
+import CodePreview from '@/components/CodePreview';
+import Terminal from '@/components/Terminal';
+import PropsTable from '@/components/PropsTable';
+
+# Card
+#### Beautiful Card with glow effect on mouse hover made with TailwindCSS, Framer motion.
+
+
+<CodePreview component="GlowCard" small={true}/>
+
+## About
+card component with **glow** effect on **mouse hover** 
+
+## Installation
+<Terminal InstallerProp="npx" library="glowcard"/>
+
+## Props
+<PropsTable data={[
+    {
+        name: "className",
+        type: "string",
+        description: "adds class to the component",
+    },
+    {
+        name: "color",
+        type: "string",
+        description: "declare color of the glow effect in hex"
+    }
+  ]}/>
+
+## Colors
+### Red
+<CodePreview component="GlowCardRed" small={true}/>
+
+### Blue
+<CodePreview component="GlowCardBlue" small={true}/>
+
+### Yellow
+<CodePreview component="GlowCardYellow" small={true}/>

@@ -10,7 +10,7 @@ const components = {
   hero: React.lazy(() => import("@/components/docs/Hero")),
   navbar: React.lazy(() => import("@/components/docs/Navbar")),
   button: React.lazy(() => import("@/components/docs/Button")),
-  card: React.lazy(() => import("@/components/docs/Card")),
+  card: React.lazy(() => import("@/components/docs/Card.mdx")),
 };
 
 import {
@@ -51,6 +51,7 @@ export default function Content() {
         </Breadcrumb>
 
         {components[doc] && React.createElement(components[doc])}
+
       </Suspense>
     </div>
   );
