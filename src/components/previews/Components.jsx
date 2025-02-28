@@ -95,10 +95,42 @@ function ButtonOutline() {
 function GlowCard() {
   return (
       // color -> any valid css color (#ffffff default)
-      <AerouiCard color="#ffffff">
-        <h1>Glowing Card</h1>
+      <AerouiCard color="#ffffff" className="text-white">
+        <h1 className='text-xl font-medium'>Glowing Card</h1>
+        <p className='text-sm mt-2 text-white/70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus excepturi illo quibusdam rem voluptates ab recusandae, beatae similique sit.</p>
       </AerouiCard>
   )
 }
 
-export {Navbar1, Hero1, Button, GlowCard, ButtonPrimary, ButtonSecondary, ButtonGhost, ButtonOutline}
+function GlowCardBlue() {
+  return (
+      // color -> any valid css color (#ffffff default)
+      <AerouiCard color="#1900ff" className="text-white">
+        <h1 className='text-xl font-medium'>Glowing Card</h1>
+        <p className='text-sm mt-2 text-white/70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus excepturi illo quibusdam rem voluptates ab recusandae, beatae similique sit.</p>
+      </AerouiCard>
+  )
+}
+
+function GlowCardRed() {
+  return (
+      // color -> any valid css color (#ffffff default)
+      <AerouiCard color="#ff1100" className="text-white">
+        <h1 className='text-xl font-medium'>Glowing Card</h1>
+        <p className='text-sm mt-2 text-white/70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus excepturi illo quibusdam rem voluptates ab recusandae, beatae similique sit.</p>
+      </AerouiCard>
+  )
+}
+
+function GlowCardYellow() {
+  return (
+      // color -> any valid css color (#ffffff default)
+      <AerouiCard color="#ffe100" className="text-white">
+        <h1 className='text-xl font-medium'>Glowing Card</h1>
+        <p className='text-sm mt-2 text-white/70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus excepturi illo quibusdam rem voluptates ab recusandae, beatae similique sit.</p>
+      </AerouiCard>
+  )
+}
+
+
+export {Navbar1, Hero1, Button, GlowCard, ButtonPrimary, ButtonSecondary, ButtonGhost, ButtonOutline, GlowCardRed, GlowCardBlue, GlowCardYellow};

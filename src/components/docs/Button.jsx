@@ -12,7 +12,7 @@ const Button = () => {
             <h1 className="text-3xl font-semibold mb-3">Button</h1>
             <p className="text-zinc-400 max-w-xl">Beautiful Button with ripple effect on click made with TailwindCSS, Framer motion, make sure to <Link href="/docs/installation" className="link">install dependencies</Link> before using them.</p>
 
-            <CodePreview component="Button" className="max-w-2xl w-full max-h-[30em]" />
+            <CodePreview component="Button" small={true} />
 
             <h1 className='title'>Installation</h1>
             <Terminal InstallerProp="npx" library="button" />
@@ -30,7 +30,7 @@ const Button = () => {
             {
             ["ButtonPrimary", "ButtonSecondary", "ButtonGhost", "ButtonOutline"].map((variant, index) => {
                 return (
-                    <CodePreview key={index} component={variant} className="max-w-2xl w-full max-h-[30em]" />
+                    <CodePreview small={true} key={index} component={variant}  />
                 )
             })
             }

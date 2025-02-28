@@ -52,7 +52,7 @@ export default function GlowCard({ children, className, color = '#ffffff' }) {
 
   return (
     <div className="w-screen h-screen flex items-center justify-center">
-      <div className={`w-fit h-fit p-1 group relative bg-zinc-900 rounded-[11px] !overflow-hidden`}>
+      <div className={`w-fit h-fit p-1 group relative bg-zinc-900 rounded-[12px] !overflow-hidden`}>
         {/* Outer glow */}
         <div
           className="glow w-[15em] h-[15em] rounded-full blur-3xl absolute opacity-0 transition-opacity duration-200 group-hover:opacity-50"

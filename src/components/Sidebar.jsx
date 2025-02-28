@@ -57,10 +57,10 @@ const Sidebar = () => {
             {docs.map((section, index) => 
             (
                 <div key={index} className='mb-6'>
-                    <h2 className='font-[600] pl-2'>{section.title}</h2>
-                    <ul className='mt-2'>
+                    <h2 className='font-[600] pl-2 mb-2'>{section.title}</h2>
+                    <ul className=''>
                         {section.pages.map((page, index) => (
-                            <Link href={`/docs/${page.title.replace(/\s/g, "").toLowerCase()}`}> <div onClick={()=> setSelected(section.title)} key={index} className={`${doc == page.title.replace(/\s/g, "").toLowerCase() ? 'bg-zinc-100 dark:bg-zinc-900' : 'hover:bg-zinc-100 dark:hover:bg-zinc-900'} text-zinc-800 dark:text-zinc-300 py-1 rounded-[8px] px-2 w-full cursor-pointer mt-1`}>{page.title}</div> </Link>
+                            <Link href={`/docs/${page.title.replace(/\s/g, "").toLowerCase()}`}> <div onClick={()=> setSelected(section.title)} key={index} className={`border-l ${doc == page.title.replace(/\s/g, "").toLowerCase() ? ' border-black dark:border-white' : ' dark:border-zinc-600'} hover:dark:text-white text-zinc-800 dark:text-zinc-300 py-1 px-4 w-full cursor-pointer ml-2`}>{page.title}</div> </Link>
                         ))}
                     </ul>
                 </div>
