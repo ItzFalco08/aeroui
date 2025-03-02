@@ -26,7 +26,7 @@ body {
   /* Firefox */
 }
 
-.container {
+.con {
   margin-left: 5rem;
   margin-right: 5rem;
 }
@@ -65,7 +65,7 @@ body {
 
 
 @media (max-width: 768px) {
-  .container {
+  .con {
     margin-left: 1em;
     margin-right: 1em;
   }
