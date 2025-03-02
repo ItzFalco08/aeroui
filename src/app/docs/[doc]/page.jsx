@@ -1,8 +1,7 @@
-"uce client"
 import React from 'react'
 import Nav from '@/components/Nav'
 import Sidebar from '@/components/Sidebar'
-import Content from '@/components/Content'
+import Content from '@/components/content/Content'
 
 const page = () => {
   return (

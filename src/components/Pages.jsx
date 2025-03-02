@@ -1,20 +1,54 @@
+import Image from 'next/image';
+
 export default function Pages() {
+    const pages = [
+        {
+            title: "Hero Sections",
+            components: 3,
+            image: ""
+        },
+
+        {
+            title: "Navbars",
+            components: 3,
+            image: ""
+        },
+
+        {
+            title: "Cards",
+            components: 6,
+            image: ""
+        },
+
+        {
+            title: "Buttons",
+            components: 12,
+            image: ""
+        }
+    ]
+
     return (
         <div className="w-full h-fit  ">
             <div>
-                <p className="text-zinc-300">Components</p>
+                <p className="text-foreground/70">Components</p>
                 <h1 className="max-w-2xl font-semibold text-foreground text-4xl">Beautiful Ui Components made by focusing in quality over quantity</h1>
-                <p className="text-zinc-300 mt-4">50+ Beautifully crafted components to kickstart your next project.</p>
+                <p className="text-foreground/70 mt-4">50+ Beautifully crafted components to kickstart your next project.</p>
             </div>
 
-            <div className="w-full grid grid-cols-4 mt-12 gap-4 h-fit bg-red-300 ">
-                <div className="w-full h-[14em] bg-red-500"></div>
-                <div className="w-full h-[14em] bg-red-500"></div>
-                <div className="w-full h-[14em] bg-red-500"></div>
-                <div className="w-full h-[14em] bg-red-500"></div>
-                <div className="w-full h-[14em] bg-red-500"></div>
-                <div className="w-full h-[14em] bg-red-500"></div>
-                <div className="w-full h-[14em] bg-red-500"></div>
+            <div className="w-full grid grid-cols-4 mt-12 gap-4 h-fit">
+
+                {pages.map((page, index) => (
+                    <div key={index} className="w-full h-fit ">
+                        <div className="w-full h-[12em] rounded-xl bg-[#080808]">
+                            <Image src={page.image} alt='image' height="full" width="full" className='w-full h-full '/>
+                        </div>
+                        <h1 className="text-xl font-medium mt-4">{page.title}</h1>
+                        <p className="text-sm text-foreground/70">{page.components} components</p>
+                    </div>
+                ))
+                }
+
+
             </div>
         </div>
     )

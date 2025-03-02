@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Usage from '@/components/Usage'
 import Pages from '@/components/Pages'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Pages />
       <Usage />
+      <Footer />
     </div>
   )
 }
