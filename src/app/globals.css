@@ -62,12 +62,13 @@ body {
   border-bottom: 1px solid 
 }
 
+#navbar {
+  width: calc(100% - 60px);
+}
 
-
-@media (max-width: 768px) {
-  .con {
-    margin-left: 1em;
-    margin-right: 1em;
+@media (max-width: 640px) {
+  #navbar {
+    width: calc(100% - 30px);
   }
 }
 
@@ -136,4 +137,6 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+
 }
