@@ -146,36 +146,42 @@ export default function Component() {
 `;
 
 const GlowCardRed = 
-`function GlowCardRed() {
+`import GlowCard from "@/components/aeroui/glowcard"
+
+export default function GlowCardRed() {
   return (
       // color -> any valid css color (#ffffff default)
-      <AerouiCard color="#ff1100" className="text-white">
+      <GlowCard color="#ff1100" className="text-white">
         <h1 className='text-xl font-medium'>Glowing Card</h1>
         <p className='text-sm mt-2 text-white/70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus excepturi illo quibusdam rem voluptates ab recusandae, beatae similique sit.</p>
-      </AerouiCard>
+      </GlowCard>
   )
 }
 
 `;
 
-const GlowCardBlue = `function GlowCardBlue() {
+const GlowCardBlue = `import GlowCard from "@/components/aeroui/glowcard"
+
+export default function GlowCardBlue() {
   return (
       // color -> any valid css color (#ffffff default)
-      <AerouiCard color="#1900ff" className="text-white">
+      <GlowCard color="#1900ff" className="text-white">
         <h1 className='text-xl font-medium'>Glowing Card</h1>
         <p className='text-sm mt-2 text-white/70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus excepturi illo quibusdam rem voluptates ab recusandae, beatae similique sit.</p>
-      </AerouiCard>
+      </GlowCard>
   )
 }
 `
 
-const GlowCardYellow = `function GlowCardYellow() {
+const GlowCardYellow = `import GlowCard from "@/components/aeroui/glowcard"
+
+export default function GlowCardYellow() {
   return (
       // color -> any valid css color (#ffffff default)
-      <AerouiCard color="#ffe100" className="text-white">
+      <GlowCard color="#ffe100" className="text-white">
         <h1 className='text-xl font-medium'>Glowing Card</h1>
         <p className='text-sm mt-2 text-white/70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus excepturi illo quibusdam rem voluptates ab recusandae, beatae similique sit.</p>
-      </AerouiCard>
+      </GlowCard>
   )
 }
 

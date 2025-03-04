@@ -2,15 +2,13 @@ import { Poppins } from "next/font/google";
 
 import "./globals.css";
 
-import { ThemeProvider } from "@/components/theme-provider"
-
-import { SelectedProvider } from "@/hooks/useSelected"
-import { InstallerProvider } from "@/hooks/useInstaller";
-
+import Providers from './Providers'
 
 export const metadata = {
-  title: "Aero UI",
-  description: "TailwindCSS Component library",
+  title: "Aero UI - TailwindCSS Component Library",
+  description: "Aero UI is a modern, lightweight, and customizable TailwindCSS component library designed to streamline your web development workflow.",
+  keywords: "TailwindCSS, UI components, web design, frontend development, Aero UI",
+  authors: [{ name: "Rupam Das", url: "https://www.linkedin.com/in/rupamdas07/" }],
   icons: {
     icon: "/favicon.svg",
   },
@@ -31,17 +29,7 @@ export default async function RootLayout({ children }) {
       <body
         className={`${poppins.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-        >
-          <SelectedProvider>
-            <InstallerProvider>
-              {children}
-            </InstallerProvider>
-          </SelectedProvider>
-
-        </ThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
