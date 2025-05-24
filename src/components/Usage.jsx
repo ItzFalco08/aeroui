@@ -10,7 +10,7 @@ export default function Usage() {
 
 
                 <div className='relative w-fit h-fit rounded-xl overflow-hidden  mt-8'>
-                    <video src="/demo.mp4" source autoPlay loop muted className='relative w-[50em]' />
+                    <video src="/demo.mp4" autoPlay loop muted className='relative w-[50em]' />
                 </div>
             </div>
         </div>

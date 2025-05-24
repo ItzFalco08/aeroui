@@ -18,7 +18,7 @@ export default function CodePreview({ component, small }) {
     const code = CodeSnippets[component] || `// Code not found for ${component}`;
 
     return (
-        <div className={`my-10  h-fit flex flex-col ${small ? '!max-w-2xl !max-h-[34em]' : 'w-[50em]'}`}>
+        <div className={`my-10  h-fit flex flex-col ${small ? '!max-w-2xl !max-h-[34em]' : 'max-w-[50em]'}`}>
             <div className="border-b border-zinc-400 dark:border-zinc-800 h-15 flex gap-2 mb-5 full py-2">
                 <Button variant="ghost" onClick={() => setSelected('Preview')} className={`${Selected === 'Preview' && 'bg-secondary'} h-full`}>
                     Preview

@@ -11,9 +11,11 @@ export default function Code({ code, className }) {
   const { theme } = useTheme();
 
   useEffect(() => {
-
     Prism.highlightAll();
   }, [theme]);
+
+
+
 
   return (
     <div className={`w-full relative ${className}`}>

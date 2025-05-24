@@ -7,25 +7,25 @@ export default function Pages() {
         {
             title: "Hero Sections",
             components: 3,
-            image: ""
+            image: null
         },
 
         {
             title: "Navbars",
             components: 3,
-            image: ""
+            image: null
         },
 
         {
             title: "Cards",
             components: 6,
-            image: ""
+            image: null
         },
 
         {
             title: "Buttons",
             components: 12,
-            image: ""
+            image: null
         }
     ]
 
@@ -42,7 +42,12 @@ export default function Pages() {
                 {pages.map((page, index) => (
                     <div key={index} className="w-full h-fit ">
                         <div className="w-full max-w-sm h-[12em] rounded-xl bg-[#080808]">
-                            <Image src={page.image} alt='image' height="full" width="full" className='w-full h-full ' />
+                            {
+                                // remove this condition after adding page.image
+                                page.image && (
+                                    <Image src={page.image} alt='image' height={100} width={150} className='w-full h-full ' />
+                                )
+                            }
                         </div>
                         <h1 className="text-xl font-medium mt-4">{page.title}</h1>
                         <p className="text-sm text-foreground/70">{page.components} components</p>
