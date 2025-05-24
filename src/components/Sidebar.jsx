@@ -17,6 +17,9 @@ const Sidebar = () => {
                 {
                     title: "Installation",
                 },
+                {
+                    title: "Dark Mode",
+                },
             ],
         },
 
