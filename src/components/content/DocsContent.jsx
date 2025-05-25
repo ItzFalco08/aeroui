@@ -6,6 +6,9 @@ import { LoaderCircle } from "lucide-react";
 const components = {
   installation: React.lazy(() => import("@/components/docs/Installation")),
   darkmode: React.lazy(() => import("@/components/docs/DarkMode.mdx")),
+  nextjs: React.lazy(() => import("@/components/docs/darkmode/nextjs.mdx")),
+  vite: React.lazy(() => import("@/components/docs/darkmode/vite.mdx")),
+  react: React.lazy(() => import("@/components/docs/darkmode/react.mdx")),
   aboutme: React.lazy(() => import("@/components/docs/About")),
   overview: React.lazy(() => import("@/components/docs/Overview")),
   hero: React.lazy(() => import("@/components/docs/Hero")),

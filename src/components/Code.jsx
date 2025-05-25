@@ -15,8 +15,6 @@ export default function Code({ code, className }) {
   }, [theme]);
 
 
-
-
   return (
     <div className={`w-full relative ${className}`}>
       <CopyButton code={code} />
