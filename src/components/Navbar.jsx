@@ -58,8 +58,6 @@ const Navbar = () => {
                   <Link href='https://www.linkedin.com/in/rupamdas07/'>Hire Me</Link>
                 </div>
               </motion.div>
-
-
             </>
           ) : ""
         }
@@ -83,8 +81,8 @@ const Navbar = () => {
 
         </div>
 
-        <div className='flex items-center relative h-full'>
-          <ModeToggle className="" />
+        <div className='flex items-center gap-2 relative h-full'>
+          <ModeToggle/>
           <Link href="/docs/overview" className='h-full'><Button className="text-xm sm:text-md rounded-full !h-[100%] text-white dark:text-black">Components <ChevronRight /></Button></Link>
         </div>
       </div>

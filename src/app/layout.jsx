@@ -25,6 +25,9 @@ const poppins = Poppins({
 export default async function RootLayout({ children }) {
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
+      <head>
+        <meta name="algolia-site-verification"  content="503242386A214892" />
+      </head>
       <link rel="icon" href="/favicon.svg" />
       <body
         className={`${poppins.variable} antialiased`}
